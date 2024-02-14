@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:maharah_course_project/presentation/user_profile/user_profile.dart';
 import 'package:maharah_course_project/presentation/widgets/profile_option.dart';
 
 class BottomSection extends StatelessWidget {

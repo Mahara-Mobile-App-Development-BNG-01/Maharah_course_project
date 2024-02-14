@@ -1,10 +1,11 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:maharah_course_project/presentation/home_page/home_page.dart';
 
-import 'presentation/user_profile/user_profile.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( HomePage());
 }
 
 class MyApp extends StatelessWidget {
