@@ -3,7 +3,8 @@
 import 'package:flutter/material.dart';
 
 class HeaderSection extends StatelessWidget {
-  const HeaderSection({super.key});
+  const HeaderSection({super.key, required this.profileimage});
+  final String  profileimage;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class HeaderSection extends StatelessWidget {
             clipBehavior: Clip.hardEdge,
             borderRadius: BorderRadius.circular(120),
             child: Image.asset(
-              "assets/images/profile_image.webp",
+              profileimage,
               width: 140,
               height: 140,
             ),

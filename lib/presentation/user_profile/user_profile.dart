@@ -4,7 +4,8 @@ import 'bottom_section.dart';
 import 'header_section.dart';
 
 class UserProfilePage extends StatelessWidget {
-  const UserProfilePage({super.key});
+  const UserProfilePage({super.key, required this.profile_image});
+  final String profile_image;
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +17,11 @@ class UserProfilePage extends StatelessWidget {
         backgroundColor: theme.colorScheme.background,
       ),
       backgroundColor: Colors.grey.shade200,
-      body: const SingleChildScrollView(
+      body:  SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            HeaderSection(),
+            HeaderSection(profileimage: profile_image),
             SizedBox(
               height: 24,
             ),
